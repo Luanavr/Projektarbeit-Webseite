@@ -23,6 +23,7 @@ html, body{
     height: 100%;
 }
 body{
+    min-width: 1350px;
     background-color: var(--color-background);
 }
 .container{
@@ -61,7 +62,6 @@ nav{
 main{
     grid-area: main;
     overflow-y: auto;
-    border:var(--border);
 }
 
 .aside{
@@ -112,19 +112,28 @@ footer{
 
 .home{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 img{
-    max-width: 500px;
+    max-width: 400px;
 }
-.pic-and-problems{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 .home img{
     border:var(--border);
+    margin-right: 1px;
+    margin-bottom: 10px;
 }
-.home p{
+.home div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border:var(--border);
+    margin: 0;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.homepage{
+    text-decoration: underline;
 }
