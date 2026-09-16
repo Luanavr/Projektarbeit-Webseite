@@ -1,3 +1,22 @@
 .formular{
     text-decoration: underline;
 }
+fieldset{
+    border: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.how-was-it{
+    display: flex;
+    flex-direction: column;
+}
+.problem{
+    display: flex;
+    flex-direction: column;
+}
+fieldset label,input,select,textarea{
+    margin: 5px;
+}
+.radioboxes div{
+    padding: 10px;
+}

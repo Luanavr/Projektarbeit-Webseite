@@ -1,15 +1,48 @@
-.account{
+.account {
     text-decoration: underline;
 }
-.dateien{
+
+.dateien {
     text-decoration: underline;
 }
-.homepage-mediathek{
+
+.homepage-mediathek {
     text-decoration: underline;
 }
-.installieren{
+
+.installieren {
     text-decoration: underline;
 }
-.try-first{
+
+.try-first {
     text-decoration: underline;
+}
+
+@media (max-width:1200px) {
+    .container {
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 120px 120px 1fr 100px;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "aside"
+            "main"
+            "footer";
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .aside {
+        border-top: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+        gap:0px
+    }
+
+
 }

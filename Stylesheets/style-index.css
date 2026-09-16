@@ -23,7 +23,6 @@ html, body{
     height: 100%;
 }
 body{
-    min-width: 1350px;
     background-color: var(--color-background);
 }
 .container{
@@ -33,7 +32,7 @@ body{
     box-sizing: border-box;
 
     grid-template-columns: 200px auto 200px;
-    grid-template-rows: 100px auto 80px;
+    grid-template-rows: 100px 1fr 80px;
 
     grid-template-areas: 
     "platzhalter header platzhalter2"
@@ -88,8 +87,8 @@ footer{
 .nav-links{
     display: inline-block; 
     border: var(--border);
-    border-radius: 12px;     /* '20%' wirkt bei länglichen Buttons oft verzogen, Pixel sind hier sauberer */
-    padding: 8px 14px;       /* Innenabstand um den Text */
+    border-radius: 12px;     
+    padding: 8px 14px; 
     
     text-decoration: none;
     color: black;
@@ -137,3 +136,4 @@ img{
 .homepage{
     text-decoration: underline;
 }
+

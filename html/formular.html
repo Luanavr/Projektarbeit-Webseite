@@ -7,6 +7,7 @@
     <title>IT-Ratgber</title>
     <link rel="stylesheet" href="/Stylesheets/style-index.css">
     <link rel="stylesheet" href="/Stylesheets/formular.css">
+    <link rel="stylesheet" href="/Stylesheets/media.css">
 </head>
 
 <body>
@@ -20,8 +21,8 @@
 
         <nav class="item">
             <div class="nav-items">
-                <p> <a href="/index.html" alt="Weiterführender Link: Zur Startseite"
-                        class="nav-links">Startseite</a></p>
+                <p> <a href="/index.html" alt="Weiterführender Link: Zur Startseite" class="nav-links">Startseite</a>
+                </p>
                 <p><a href="/html/Mediathek/index-mediathek.html" alt="Weiterführender Link: Mediathek"
                         class="nav-links">Direkte Infos hier!</a></p>
                 <p><a href="/html/formular.html" alt="Weiterführender Link: Zu einem Formular"
@@ -33,16 +34,16 @@
 
         <main class="item">
             <form action="https://blj-ict-bz.ch/formlog/" method="post">
-                <fieldset>
+                <fieldset class="person">
                     <legend>Wer bist du grob und wie kann ich dich erreichen?</legend>
                     <label for="name-field">Vorname: </label>
-                    <input type="text" name="first-name" id="name-field" placeholder="Vorname">
+                    <input type="text" name="first-name" id="name-field" placeholder="Vorname" required>
                     <label for="telefonnr">Telefonnummer: </label>
-                    <input type="text" name="telenr" id="telefonnr" placeholder="Telefonnummer">
+                    <input type="text" name="telenr" id="telefonnr" placeholder="Telefonnummer" required>
                     <label for="mail">Email: </label>
                     <input type="email" name="email" id="mail" placeholder="Email">
                 </fieldset>
-                <fieldset>
+                <fieldset class="how-was-it">
                     <legend>Erfahrung auf der Webseite (Nur aus intresse, nicht wichtig)</legend>
                     <select name="erfahrung">
                         <option value="sehr-gut">Ich war sehr zufrieden mit der Webseite.</option>
@@ -52,27 +53,31 @@
                         <option value="very-bad">Ich war gar nicht zufrieden mit der Webseite.</option>
                     </select>
                     <label for="notes">Bemerkungen: </label>
-                    <textarea name="notes" id="notes" rows="2" placeholder="Bemerkungenen zu deiner Erfahrung"></textarea>
+                    <textarea name="notes" id="notes" rows="2"
+                        placeholder="Bemerkungenen zu deiner Erfahrung"></textarea>
                 </fieldset>
-                <fieldset>
+                <fieldset class="problem">
                     <legend>Kurze Beschreibung deines Problems</legend>
-                    <textarea name="Problem" rows="5" id="problem" placeholder="Problembeschreibung"></textarea>
+                    <textarea name="Problem" rows="5" id="problem" placeholder="Problembeschreibung" required></textarea>
+                    <div class="radioboxes">
+                        <div class="yes">
+                            <label for="in-media-yes">Ich möchte das mein Problem in die Mediathek aufgenommen
+                                wird.</label>
+                            <input type="radio" name="in-mediathek-aufnehmen" id="in-media-yes" value="ja">
+                        </div>
+                        <div class="egal">
+                            <label for="in-media-egal">Mir ist es egal ob mein Problem in die Mediathek aufgenommen
+                                wird.</label>
+                            <input type="radio" name="in-mediathek-aufnehmen" id="in-media-egal" value="egal">
+                        </div>
+                        <div class="no">
+                            <label for="in-media-no">Ich möchte nicht das mein Problem in die Mediathek aufgenommen
+                                wird.</label>
+                            <input type="radio" name="in-mediathek-aufnehmen" id="in-media-no" value="nein">
+                        </div>
+                    </div>
                 </fieldset>
-
-
-
                 <input type="submit" name="submit" value="Formular absenden">
-
-
-
-
-
-
-
-
-
-
-
             </form>
         </main>
 
